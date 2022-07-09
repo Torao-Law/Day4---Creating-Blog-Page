@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <title>Day2_Nav&form</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navLeft">
+            <div class="logoBrand">
+                <img src="assets/img/logo (3).png" alt="logoBrand">
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html" active>Home</a>
+                </li>
+                <li>
+                    <a href="myProject.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- form content -->
+    <div class="contactMe">
+        <div class="formContainer">
+            <form action="">
+                <h1>GET IN TOUCH</h1>
+                <div class="inputWrapper">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Type your name">
+                </div>
+                <div class="inputWrapper">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Type your email">
+                </div>
+                <div class="inputWrapper">
+                    <label for="telp">Phone Number</label>
+                    <input type="text" id="telp" placeholder="Type your phone number">
+                </div>
+                <div class="inputWrapper">
+                    <label for="subject-form">Subject</label>
+                    <select name="subject-form" id="subject-form">
+                        <option value="none" selected disabled hidden>Select an Option</option>
+                        <option>Lets Talk</option>
+                        <option>Lets Collaboration</option>
+                        <option>Lets Create Project</option>
+                    </select>
+                </div>
+                <div class="inputWrapper">
+                    <label for="message">Your Message</label>
+                    <textarea type="text" id="message" placeholder="Type your message"></textarea>
+                </div>
+
+                <div class="buttonWrapper">
+                    <button type="button" onclick="{getData()}">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="assets/js/contact-me.js"></script>
+
+</html>

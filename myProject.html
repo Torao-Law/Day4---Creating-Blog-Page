@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navLeft">
+            <div class="logoBrand">
+                <img src="assets/img/logo (3).png" alt="logoBrand">
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html" active>Home</a>
+                </li>
+                <li>
+                    <a href="myProject.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- create project -->
+    <div class="container">
+        <div class="formInputContainer">
+            <form onsubmit="postProject(event)">
+                <h1 class="titleProject">CREATE NEW PROJECT</h1>
+                <div class="inputWrapper">
+                    <label for="titleProject">Title</label>
+                    <input type="text" id="titleProject" placeholder="Type title here...">
+                </div>
+
+                <div class="inputDateProject">
+                    <div class="leftDate">
+                        <div class="inputWrapper">
+                            <label for="startDateProject">Start Project</label>
+                            <input type="date" id="startDateProject">
+                        </div>
+                    </div>
+
+                    <div class="rightDate">
+                        <div class="inputWrapper">
+                            <label for="endDateProject">End Project</label>
+                            <input type="date" id="endDateProject">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputWrapper">
+                    <label for="descriptionProject">Description</label>
+                    <textarea type="text" id="descriptionProject" placeholder="Type description here..."></textarea>
+                </div>
+
+                <div class="checkBoxWrapper">
+                    <label class="labelTecnologies">Technologies</label>
+                    <div class="checkBoxLeftItem">
+                        <div class=ItemCheckboxxWrapper">
+                            <input type="checkbox" id="angular" name="checkboxProject" value="angular">
+                            <label for="angular">Angular</label>
+                        </div>
+                        <div class="ItemCheckboxWrapper">
+                            <input type="checkbox" id="react-js" name="checkboxProject" value="react">
+                            <label for="react-js">React JS</label>
+                        </div>
+                    </div>
+                    <div class="checkBoxRightItem">
+                        <div class="ItemCheckboxWrapper">
+                            <input type="checkbox" id="node-js" name="checkboxProject" value="node-js">
+                            <label for="node-js">Node JS</label>
+                        </div>
+                        <div class="ItemCheckboxWrapper">
+                            <input type="checkbox" id="vue-js" name="checkboxProject" value="vuejs">
+                            <label for="vue-js">Vue JS</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputWrapper">
+                    <label>Upload Image</label>
+                    <div class="input-blog-image-group">
+                        <label for="inputImageProject">
+                            <p>Choose</p>
+                            <img src="assets/img/file.png" alt="file" />
+                        </label>
+                        <input type="file" id="inputImageProject" hidden />
+                    </div>
+                </div>
+                <div class="buttonWrapper">
+                    <button type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- project render -->
+    <div class="projectRender">
+        <h1 class="titleProject">MY PROJECT</h1>
+
+        <div class="cardProjectContainer" id="cardProjectRender">
+            <div class="cardProjectRender">
+                <div class="projectImgWrapper">
+                    <img src="assets/img/images.jpg" alt="">
+                </div>
+                <div class="projectContentWrapper">
+                    <a href="detail-project.html" class="titleCardProject">Test Dummy</a>
+                    <p class="distanceCardProject">Duration : 3 Month</p>
+                    <p class="descCardProject">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+                        dignissimos!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, molestiae.</p>
+                    <div class="iconCardProject">
+                        <div class="itemIconProject">
+                            <i class="fa-brands fa-angular"></i>
+                        </div>
+                        <div class="itemIconProject">
+                            <i class="fa-brands fa-vuejs"></i>
+                        </div>
+                        <div class="itemIconProject">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="itemIconProject">
+                            <i class="fa-brands fa-node-js"></i>
+                        </div>
+                    </div>
+                    <div class="cardProjectAction">
+                        <a href="#" class="cardEditAction">EDIT</a>
+                        <a href="#" class="cardDeleteAction">DELETE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="assets/js/myProject.js"></script>
+
+</html>
